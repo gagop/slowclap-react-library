@@ -1,10 +1,17 @@
 {
   "name": "slowclap-react-library",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.3",
   "main": "dist/slowclap-react-library.js",
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "a/b testing",
+    "tests",
+    "react",
+    "ab testing",
+    "ab tests"
   ],
   "types": "dist/main.d.ts",
   "type": "module",

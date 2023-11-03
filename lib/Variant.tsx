@@ -7,7 +7,7 @@ interface VariantProps {
   children: ReactNode;
 }
 
-const Variant: React.FC<VariantProps> = ({ name, children }) => {
+export const Variant: React.FC<VariantProps> = ({ name, children }) => {
   const experimentContext = useContext(ExperimentContext);
 
   if (!experimentContext) {
@@ -22,5 +22,3 @@ const Variant: React.FC<VariantProps> = ({ name, children }) => {
 
   return null;
 };
-
-export default Variant;

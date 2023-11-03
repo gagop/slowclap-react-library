@@ -22,24 +22,27 @@ To use `ExperimentProvider` and `ExperimentContext`, wrap your component hierarc
 ### Example
 
 ```jsx
-import { ExperimentProvider } from './path-to-ab-testing-module';
+import { ExperimentProvider, Variant } from 'slowclap-react-library';
 
 const App = () => {
-  const userId = '12345'; // should be dynamically determined
+  const userId = 'abc12'; // should be dynamically determined
   const variants = [
     { name: 'RedButton', weight: 50 },
     { name: 'BlueButton', weight: 50 },
   ];
 
   return (
-    <ExperimentProvider userId={userId} variants={variants}>
-      <Variant name="RedButton">
-        <button style={{ backgroundColor: 'red' }}>Ok</button>
-      </Variant>
-      <Variant name="BlueButton">
-        <button style={{ backgroundColor: 'blue' }}>Ok</button>
-      </Variant>
-    </ExperimentProvider>
+    <>
+      <h1>Experiment</h1>
+      <ExperimentProvider userId={userId} variants={variants}>
+        <Variant name="RedButton">
+          <button style={{ backgroundColor: 'red' }}>Ok</button>
+        </Variant>
+        <Variant name="BlueButton">
+          <button style={{ backgroundColor: 'blue' }}>Ok</button>
+        </Variant>
+      </ExperimentProvider>
+    </>
   );
 };
 
