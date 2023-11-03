@@ -1,7 +1,7 @@
 {
   "name": "slowclap-react-library",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/slowclap-react-library.js",
   "files": [
     "dist"
@@ -23,6 +23,10 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "prepublishOnly": "npm run buildLib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gagop/slowclap-react-library"
   },
   "peerDependencies": {
     "react": "^18.2.0",
