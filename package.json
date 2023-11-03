@@ -1,7 +1,7 @@
 {
   "name": "slowclap-react-library",
   "private": false,
-  "version": "1.0.4",
+  "version": "1.0.6",
   "main": "dist/slowclap-react-library.js",
   "files": [
     "dist"
@@ -13,6 +13,7 @@
     "ab testing",
     "ab tests"
   ],
+  "license": "MIT",
   "types": "dist/main.d.ts",
   "type": "module",
   "scripts": {
