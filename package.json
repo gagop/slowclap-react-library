@@ -1,7 +1,7 @@
 {
   "name": "slowclap-react-library",
   "private": false,
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "dist/slowclap-react-library.js",
   "files": [
     "dist"
